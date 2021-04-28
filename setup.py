@@ -7,7 +7,7 @@ setup(
     description='A rest client for pricehistory.in',
     author='lzzy12',
     license='GPLv3',
-    install_requires=[],
+    install_requires=['requests'],
     setup_requires=['pytest-runner'],
     # tests_require=['pytest==4.4.1'],
 )
