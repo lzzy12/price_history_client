@@ -1,3 +1,13 @@
+Installation:
+Download the latest whl file from https://github.com/lzzy12/price_history_client/releases
+
+Open command prompt/terminal and make sure you are in the same directory where you downloaded the release file
+
+Then run:
+ ```shell
+ pip install price_history*.whl
+ ```
+
 Usage:
 
 ```python
