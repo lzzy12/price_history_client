@@ -23,7 +23,14 @@ class ProductDetails:
         self.image = image
 
     @staticmethod
+    def __convert_price(price: str) -> float:
+        return float(price.replace(',', ''))
+
+    @staticmethod
     def fromJson(jsonData):
         data = json.loads(jsonData)["effects"]["emits"][0]["params"][0]
-        return ProductDetails(data["id"], data["title"], data["curr_price"], data["low_price"], data["high_price"],
-                              data["avg_price"], data["store"], data['image'])
+
+        return ProductDetails(data["id"], data["title"], ProductDetails.__convert_price(data["curr_price"]),
+                              ProductDetails.__convert_price(data["low_price"]),
+                              ProductDetails.__convert_price(data["high_price"]),
+                              ProductDetails.__convert_price(data["avg_price"]), data["store"], data['image'])

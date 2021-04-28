@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='price_history',
     packages=find_packages(include=['price_history']),
-    version='0.1.1',
+    version='0.1.2',
     description='A rest client for pricehistory.in',
     author='lzzy12',
     license='GPLv3',
