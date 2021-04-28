@@ -1,11 +1,15 @@
 import re
 import requests
 import json
-from models import ProductDetails
-from exceptions import ApiError
+from .models import ProductDetails
+from .exceptions import ApiError
 
 
-def fetch_product(product_url: str):
+def fetch_product(product_url: str) -> ProductDetails:
+    """
+    :param product_url: URL of the product
+    :return: Details of the product fetched
+    """
     session = requests.session()
     HOMEPAGE = 'https://pricehistory.in/'
     session.headers.update(

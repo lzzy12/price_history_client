@@ -1,2 +1,6 @@
 venv
 .idea
+.eggs
+price_history.egg-info
+build
+dist
