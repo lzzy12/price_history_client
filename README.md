@@ -22,5 +22,6 @@ product = fetch_product.fetch_product("https://www.amazon.in/Ant-Esports-KM500W-
 
 **store**: Store name
 
-**image**: Image of the product
+**image**: URL of image of the product
 
+**inStock**: Whether the product is in stock or not
